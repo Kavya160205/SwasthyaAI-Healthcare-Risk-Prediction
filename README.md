@@ -111,31 +111,57 @@ https://swasthyaai-backend-6lbi.onrender.com/docs
 
 ---
 
-# 📂 Project Structure
+## 📁 Project Structure
 
-```
+```text
 SwasthyaAI
-│
-├── frontend
-│   ├── public
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── package.json
-│   └── ...
 │
 ├── backend
 │   ├── models
+│   │   └── __init__.py
+│   │
 │   ├── routes
+│   │   ├── __init__.py
+│   │   ├── health.py
+│   │   └── predict.py
+│   │
 │   ├── utils
+│   │   ├── __init__.py
+│   │   ├── advice.py
+│   │   └── predictor.py
+│   │
 │   ├── main.py
 │   ├── requirements.txt
-│   └── runtime.txt
+│   ├── runtime.txt
+│   └── .python-version
+│
+├── frontend
+│   ├── public
+│   │   └── index.html
+│   │
+│   ├── src
+│   │   ├── components
+│   │   │   └── Navbar.js
+│   │   │
+│   │   ├── pages
+│   │   │   ├── LandingPage.js
+│   │   │   ├── AssessmentPage.js
+│   │   │   ├── DashboardPage.js
+│   │   │   └── ResultsPage.js
+│   │   │
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   └── package-lock.json
 │
 ├── README.md
-└── .gitignore
+├── .gitignore
+├── start.bat
+├── start.sh
+└── SwasthyaAI.code-workspace
+```
 ```
 
 ---
